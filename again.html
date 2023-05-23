@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <style>
+
+            p{
+                margin:0;
+            }
+            .a-button
+            {
+                font-size:20px;
+                padding-left:10px;padding-right:10px;
+                padding-top:5px;padding-top:5px;
+                position:relative;
+            }
+            .a-button .tooltip
+            {
+                font-size:14px;
+                background-color: rgb(207, 199, 199);
+                padding-left:6px;padding-right:6px;padding-top:3px;padding-bottom:3px;
+                position:absolute;
+                white-space:nowrap;
+                border-radius: 3px;
+                bottom:-30px;right:-10px;opacity:0;
+                pointer-events: none;
+                transition: opacity 0.5s;
+            }   
+
+            .a-button:hover .tooltip
+            {
+                opacity:1;
+            }
+
+            .title
+            {
+                font-size:23px;
+                font-weight:bold;
+                font-family:arial;
+                padding-top: 55px;
+                padding-left:20px;
+            }
+            .info
+            {
+                font-size:15px;
+                font-family: arial;
+                padding-top:30px;
+                padding-left:20px;padding-right:20px;
+                text-align: start;
+                line-height:20px;
+                letter-spacing: 0.2;
+            }
+
+            .container
+            {  
+                width:390px;
+                height:340px;
+                min-width:390px;
+                min-height:340px;
+                border-radius:5px;
+                transition:0.5s;
+                position:relative;
+                box-shadow: 0px 0px 5px 0.1px;
+            }
+            .container:hover
+            {
+                color:white;
+                margin-top:-20px;
+            }
+            .shop-now-button
+            {   
+                font-size:18px;
+                font-weight: bold;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color:white;
+                background-color: rgb(13, 144, 248);
+                padding-top:10px;padding-bottom:12px;
+                padding-left: 20px;padding-right: 20px;
+                border-radius: 25px;
+                border:none;
+                letter-spacing: 0.5;
+                margin-left:20px;
+                margin-top:30px;
+                cursor:pointer;
+            }
+            .shop-now-button:active
+            {
+                border-style: solid;
+            }
+            
+            .container .image
+            {
+                width:390px;
+                height:340px;
+                border-radius: 5px;
+                position:absolute;
+                opacity:0;
+                transition: 0.5s;
+                filter: brightness(70%);
+                top:0;left:0;right:0;bottom:0;
+                pointer-events: none;
+                z-index:-10;
+            }
+            .container:hover .image
+            {
+                opacity:1;
+            }
+            .entity
+            {
+                width:80px;
+                background-color:#0d90f8;
+                padding:5px;
+                border-radius:5px;
+                position: absolute;
+                top:0;right:0;
+            }
+           
+            .products-box
+            {
+                border-style: solid;
+                display:flex;
+                justify-content: space-between;
+               
+            }
+
+        </style>
+    </head>
+    <body>
+            <button class="a-button"> 
+                Google
+                <div class="tooltip">Google Search</div>
+            </button>
+
+            <br><br><br>
+
+            <div class="products-box">
+
+                <div class="container">
+
+                    <div class="product-info">
+                        <p class="title">Camera</p>
+                        <p class="info">A camera is an optical instrument that can capture an image. Most cameras can capture 2D images, with some more advanced models being able to capture 3D images.</p>
+                    </div>
+                    <button class="shop-now-button">Shop now &#10153; </button>
+                    <img class="image" src="cameras.webp">
+                    <img class="entity" src="camera.svg">
+                </div>
+    
+                <div class="container">
+    
+                    <div class="product-info">
+                        <p class="title">Mobile</p>
+                        <p class="info">A mobile phone, cellular phone, cell phone, cellphone, handphone, hand phone or pocket phone, sometimes shortened to simply mobile, cell, or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area.</p>
+                    </div>
+                    <button class="shop-now-button">Shop now &#10153; </button>
+                    <img class="image" src="cameras.webp">
+                    <img class="entity" src="mobile.svg">
+                </div>
+    
+                <div class="container">
+    
+                    <div class="product-info">
+                        <p class="title">TV</p>
+                        <p class="info">Television, sometimes shortened to TV, is a telecommunication medium for transmitting moving images and sound. The term can refer to a television set, or the medium of television transmission.</p>
+                    </div>
+                    <button class="shop-now-button">Shop now &#10153; </button>
+                    <img class="image" src="cameras.webp">
+                    <img class="entity" src="monitor.svg">
+                </div>
+
+            </div>
+            
+
+               
+
+               
+
+    </body>
+</html>

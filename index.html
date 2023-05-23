@@ -1,0 +1,142 @@
+<html>
+    <head>
+
+        <title>
+            DigiDev
+        </title>
+        
+    
+
+        <style>
+
+            body
+            {
+                margin:0;
+            }
+
+            p
+            {
+                margin-top:0;margin-bottom:0;
+                font-family:roboto, arial;
+            }
+
+            .navbar
+            {
+                padding-top:1.4%;
+                padding-bottom:1.4%;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                position:fixed;
+                top:8%;left:5%;right:5%;
+                border-radius: 30px;
+                box-shadow:rgba(0, 0, 0, 0.24)0px 3px 8px;
+                z-index:10;
+            }
+
+            .menu-button
+            {
+                font-size:100%;
+                text-decoration: none;
+                font-weight:bold;
+                font-family:roboto, arial;
+                color:white;
+            }
+
+            .product-container
+            {
+                width:360px;
+                height:300px;
+                box-shadow:rgba(0, 0, 3, 5.24)0px 3px 10px;
+                border-radius:4px;
+                position:relative;
+                transition:0.5s;
+            }
+
+            .product-container:hover
+            {
+                margin-top:-10px;
+                color:white;
+            }
+
+            .product-container .product-image
+            {
+                width:360px;
+                height:300px;
+                object-fit:cover;
+                transition:0.5s;
+                opacity:0;
+                border-radius: 4px;
+            }
+
+            .product-container:hover .product-image
+            {   
+                filter:brightness(70%);
+                opacity:1;
+            }
+
+            .product-title
+            {
+                padding-top:25px;
+                padding-left:20px;
+                font-size:22px;
+                font-weight:bold;
+            }
+
+            .product-info
+            {
+                padding-left:20px;
+                padding-top:10px;
+                font-size:17px;
+                letter-spacing: 1;
+                padding-right:20px;
+                text-align: start;
+            }
+            
+            .info-grid
+            {
+                width:360px;
+                height:300px;
+                position:absolute;
+                top:0;
+                display:grid;
+                grid-template-rows: 60px 1fr;
+            }
+
+            
+
+        </style>
+
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.339/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/5orZe1kkOIOPFY4W/scene.splinecode"></spline-viewer>
+
+    </head>
+
+
+    <body>
+
+        <div class="navbar">
+
+            <a class="menu-button" href="">Home</a>
+            <a class="menu-button" href="">Shop</a>
+            <a class="menu-button" href="">Cart</a>
+            <a class="menu-button" href="">About Us</a>
+            <a class="menu-button" href="">Login</a>
+
+        </div>
+
+        <div class="product-container">
+
+            <img class="product-image" src="cameras.webp" >
+                <div class="info-grid">
+
+                    <p class="product-title">Cameras</p>
+                    <p class="product-info">A camera is an optical instrument that can capture an image. Most cameras can capture 2D images, with some more advanced models being able to capture 3D images.</p>
+
+                </div>
+                
+        </div>
+        
+    </body>
+</html>

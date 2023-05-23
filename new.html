@@ -1,0 +1,105 @@
+<htm>
+    <head>
+        <style>
+
+            body
+            {
+                margin:0;
+            }
+            p
+            {
+                margin:0;
+                font-family:roboto, arial;
+            }
+
+            .image-container    .image
+            {
+                width:380px;
+                height:320px;
+                object-fit: cover;
+                border-radius: 4px;
+                filter:brightness(60%);
+                z-index:-10;
+                opacity:0;
+                transition:opacity 0.5s;
+                
+            }
+            .image-container:hover .image
+            {
+                opacity:1;
+            }
+            .title
+            {
+                font-size:22px;font-weight: bold;
+                padding-top:40px;
+                padding-bottom: 10px;
+                padding-left:20px;
+            }
+            .info
+            {
+                font-size:16px;
+                padding-top: 30px;padding-bottom: 10px;
+                padding-left: 20px;padding-right: 20px;
+                text-align: start;
+            }
+            .image-container
+            {
+                position:relative;
+                display:inline-block;
+                width:380px;
+                height:320px;
+                box-shadow: 0 0 7px 0px;
+                border-radius: 4px;
+                transition: 0.5s;
+            }
+            .image-container:hover
+            {   
+                margin-top:-15px;
+            }
+            .image-container .details
+            {   
+                width:380px;
+                height:320px;
+                position:absolute;
+                top:0px;left:0px;right:0px;
+                display: grid;
+                grid-template-rows: 60px 1fr;
+                pointer-events: none;
+            }   
+            .image-container:hover .details
+            {
+                color:white;
+            }
+            .image-container .shop-now
+            {
+                font-size:16px;
+                font-weight:bold;
+                background-color: rgb(13 144 248);
+                border:none;
+                color:white;
+                padding-top:13px;padding-bottom:13px;
+                padding-left:20px; padding-right:20px;
+                border-radius: 25px;
+                cursor: pointer;
+                position: absolute;
+                bottom:20px;left:20px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="image-container">
+            <img class="image" src="cameras.webp">
+            <div class="details">
+                <p class="title">Camera</p>
+                <p class="info">A camera is an optical instrument that can capture an image. Most cameras can capture 2D images, with some more advanced models being able to capture 3D images.</p>
+            </div>
+            <button class="shop-now">Shop now &#10153; </button>    
+        </div>
+        
+        
+
+    </body>
+</htm>
